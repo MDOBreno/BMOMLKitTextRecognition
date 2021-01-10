@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Resulting text goes here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YiV-8a-KB5">
+                                <rect key="frame" x="20" y="44" width="374" height="409"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6CT-tg-Ax1">
+                                <rect key="frame" x="20" y="473" width="374" height="339"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMx-Pg-J8K">
+                                <rect key="frame" x="20" y="832" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5sk-Ql-99j"/>
+                                </constraints>
+                                <state key="normal" title="Escanear Documento"/>
+                            </button>
+                            <activityIndicatorView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="h25-61-ZgB">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="AIh-TF-vw2"/>
+                                    <constraint firstAttribute="width" constant="37" id="ATg-Xf-TBt"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YiV-8a-KB5" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="Cv3-SH-u5U"/>
+                            <constraint firstItem="eMx-Pg-J8K" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OeZ-UE-YDC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eMx-Pg-J8K" secondAttribute="trailing" constant="20" id="T98-30-TQy"/>
+                            <constraint firstItem="h25-61-ZgB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XZy-A9-CNN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YiV-8a-KB5" secondAttribute="trailing" constant="20" id="aCU-O7-qgl"/>
+                            <constraint firstItem="YiV-8a-KB5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eUG-jh-N6l"/>
+                            <constraint firstItem="6CT-tg-Ax1" firstAttribute="top" secondItem="YiV-8a-KB5" secondAttribute="bottom" constant="20" id="fAz-L2-QGY"/>
+                            <constraint firstItem="YiV-8a-KB5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hWi-kz-Fi8"/>
+                            <constraint firstItem="eMx-Pg-J8K" firstAttribute="top" secondItem="6CT-tg-Ax1" secondAttribute="bottom" constant="20" id="hci-Aq-kfV"/>
+                            <constraint firstItem="eMx-Pg-J8K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="n2Q-dd-Eco"/>
+                            <constraint firstItem="h25-61-ZgB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o4R-wb-ncf"/>
+                            <constraint firstItem="6CT-tg-Ax1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pmE-hH-Euh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6CT-tg-Ax1" secondAttribute="trailing" constant="20" id="y4D-qK-tHh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="h25-61-ZgB" id="AON-A9-Qm4"/>
+                        <outlet property="imageView" destination="6CT-tg-Ax1" id="FNf-1b-Tom"/>
+                        <outlet property="scanReceipts" destination="eMx-Pg-J8K" id="Av2-Gh-ZnY"/>
+                        <outlet property="textView" destination="YiV-8a-KB5" id="kZ9-ab-Xjo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
