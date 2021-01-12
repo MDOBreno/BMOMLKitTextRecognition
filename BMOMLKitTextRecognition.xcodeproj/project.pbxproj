@@ -15,6 +15,8 @@
 		337FC66925A4BBC200AB846F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337FC66825A4BBC200AB846F /* Assets.xcassets */; };
 		337FC66C25A4BBC200AB846F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337FC66A25A4BBC200AB846F /* LaunchScreen.storyboard */; };
 		337FC66F25A4BBC200AB846F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 337FC66E25A4BBC200AB846F /* main.m */; };
+		339EBB0425AB7DA0006D66E0 /* UIImage+VisionDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 339EBB0325AB7DA0006D66E0 /* UIImage+VisionDetection.m */; };
+		339EBB0925AB7F99006D66E0 /* UIUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 339EBB0825AB7F99006D66E0 /* UIUtilities.m */; };
 		D01DFAD90F37DFC3302B9A00 /* Pods_BMOMLKitTextRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB13F9E02772A8B8E358A82 /* Pods_BMOMLKitTextRecognition.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,10 @@
 		337FC66B25A4BBC200AB846F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		337FC66D25A4BBC200AB846F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		337FC66E25A4BBC200AB846F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		339EBB0225AB7DA0006D66E0 /* UIImage+VisionDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+VisionDetection.h"; sourceTree = "<group>"; };
+		339EBB0325AB7DA0006D66E0 /* UIImage+VisionDetection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VisionDetection.m"; sourceTree = "<group>"; };
+		339EBB0725AB7F99006D66E0 /* UIUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIUtilities.h; sourceTree = "<group>"; };
+		339EBB0825AB7F99006D66E0 /* UIUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIUtilities.m; sourceTree = "<group>"; };
 		91A1E0DA133A87362D0F4AEB /* Pods-BMOMLKitTextRecognition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMOMLKitTextRecognition.release.xcconfig"; path = "Target Support Files/Pods-BMOMLKitTextRecognition/Pods-BMOMLKitTextRecognition.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +96,10 @@
 				337FC66A25A4BBC200AB846F /* LaunchScreen.storyboard */,
 				337FC66D25A4BBC200AB846F /* Info.plist */,
 				337FC66E25A4BBC200AB846F /* main.m */,
+				339EBB0225AB7DA0006D66E0 /* UIImage+VisionDetection.h */,
+				339EBB0325AB7DA0006D66E0 /* UIImage+VisionDetection.m */,
+				339EBB0725AB7F99006D66E0 /* UIUtilities.h */,
+				339EBB0825AB7F99006D66E0 /* UIUtilities.m */,
 			);
 			path = BMOMLKitTextRecognition;
 			sourceTree = "<group>";
@@ -243,9 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339EBB0925AB7F99006D66E0 /* UIUtilities.m in Sources */,
 				337FC66425A4BBBF00AB846F /* ViewController.m in Sources */,
 				337FC65E25A4BBBF00AB846F /* AppDelegate.m in Sources */,
 				337FC66F25A4BBC200AB846F /* main.m in Sources */,
+				339EBB0425AB7DA0006D66E0 /* UIImage+VisionDetection.m in Sources */,
 				337FC66125A4BBBF00AB846F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

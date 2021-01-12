@@ -33,6 +33,9 @@
                                     <constraint firstAttribute="height" constant="30" id="5sk-Ql-99j"/>
                                 </constraints>
                                 <state key="normal" title="Escanear Documento"/>
+                                <connections>
+                                    <action selector="scanReceipts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aen-sM-HUZ"/>
+                                </connections>
                             </button>
                             <activityIndicatorView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="h25-61-ZgB">
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
@@ -61,10 +64,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="activityIndicator" destination="h25-61-ZgB" id="AON-A9-Qm4"/>
-                        <outlet property="imageView" destination="6CT-tg-Ax1" id="FNf-1b-Tom"/>
-                        <outlet property="scanReceipts" destination="eMx-Pg-J8K" id="Av2-Gh-ZnY"/>
-                        <outlet property="textView" destination="YiV-8a-KB5" id="kZ9-ab-Xjo"/>
+                        <outlet property="activityIndicator" destination="h25-61-ZgB" id="Nr1-CD-DZD"/>
+                        <outlet property="imageView" destination="6CT-tg-Ax1" id="aJ1-JM-wlG"/>
+                        <outlet property="textView" destination="YiV-8a-KB5" id="UA6-0G-l1M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
