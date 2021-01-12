@@ -7,10 +7,7 @@
 
 #import "ViewController.h"
 
-#import "UIImage+VisionDetection.h"
 #import "UIUtilities.h"
-//#import <MLKitTextRecognition/MLKitTextRecognition.h>
-//#import <MLKitVision/MLKVisionImage.h>
 
 
 
