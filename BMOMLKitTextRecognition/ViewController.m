@@ -22,7 +22,6 @@ static NSString *const detectionNoResultsMessage = @"No results returned.";
 /** An overlay view that displays detection annotations. */
 @property(nonatomic) UIView *annotationOverlayView;
 
-@property(weak, nonatomic) IBOutlet UIBarButtonItem *detectButton;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
@@ -193,7 +192,7 @@ static NSString *const detectionNoResultsMessage = @"No results returned.";
                                                                                     completion:nil];
                                        }]];
   resultsAlertController.message = _resultsText;
-  resultsAlertController.popoverPresentationController.barButtonItem = _detectButton;
+
   resultsAlertController.popoverPresentationController.sourceView = self.view;
   [self presentViewController:resultsAlertController animated:YES completion:nil];
   NSLog(@"%@", _resultsText);
