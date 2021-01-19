@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Resulting text goes here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U5t-0P-Ph9">
+                                <rect key="frame" x="20" y="44" width="374" height="448"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HQ7-ld-QEf">
+                                <rect key="frame" x="20" y="502" width="374" height="310"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTw-d3-Izx">
+                                <rect key="frame" x="20" y="822" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zM7-Tm-pSe"/>
+                                </constraints>
+                                <state key="normal" title="ScanDocument"/>
+                                <connections>
+                                    <action selector="scanDocument:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g1p-hP-At4"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="IpT-HW-mPA">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U5t-0P-Ph9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Abb-Tv-cSu"/>
+                            <constraint firstItem="U5t-0P-Ph9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BTe-UW-bKu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aTw-d3-Izx" secondAttribute="trailing" constant="20" id="FBW-Iy-Ze3"/>
+                            <constraint firstItem="IpT-HW-mPA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GOW-ie-Xo5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HQ7-ld-QEf" secondAttribute="trailing" constant="20" id="IG2-ht-7u8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U5t-0P-Ph9" secondAttribute="trailing" constant="20" id="Nud-vG-HGe"/>
+                            <constraint firstItem="HQ7-ld-QEf" firstAttribute="top" secondItem="U5t-0P-Ph9" secondAttribute="bottom" constant="10" id="TW2-4Z-muC"/>
+                            <constraint firstItem="U5t-0P-Ph9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="X51-9B-yPU"/>
+                            <constraint firstItem="aTw-d3-Izx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bew-x0-yys"/>
+                            <constraint firstItem="aTw-d3-Izx" firstAttribute="top" secondItem="HQ7-ld-QEf" secondAttribute="bottom" constant="10" id="dYl-ea-che"/>
+                            <constraint firstItem="IpT-HW-mPA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sq4-V7-YLH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aTw-d3-Izx" secondAttribute="bottom" constant="10" id="vnx-C5-I7V"/>
+                            <constraint firstItem="HQ7-ld-QEf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wPw-Rd-Hbo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="IpT-HW-mPA" id="YKu-qq-d5O"/>
+                        <outlet property="imageView" destination="HQ7-ld-QEf" id="U1O-Gn-AqK"/>
+                        <outlet property="textView" destination="U5t-0P-Ph9" id="l90-8f-c87"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="86.383928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

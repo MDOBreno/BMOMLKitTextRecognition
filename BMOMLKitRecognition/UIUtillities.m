@@ -1,21 +1,20 @@
 //
-//  UIUtilities.m
-//  BMOMLKitTextRecognition
+//  UIUtillities.m
+//  BMOMLKitRecognition
 //
-//  Created by Breno Medeiros on 10/01/21.
+//  Created by Breno Medeiros on 18/01/21.
 //
 
-#import "UIUtilities.h"
+#import "UIUtillities.h"
 
 static CGFloat const rectangleViewAlpha = 0.3;
 static CGFloat const rectangleViewCornerRadius = 10.0;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@implementation UIUtilities
+@implementation UIUtillities
 
-
-+ (void)addRectangle:(CGRect)rectangle toView:(UIView *)view color:(UIColor *)color {
++ (void) addRectangle:(CGRect)rectangle toView:(UIView *)view color:(UIColor *)color {
     UIView *rectangleView = [[UIView alloc] initWithFrame:rectangle];
     rectangleView.layer.cornerRadius = rectangleViewCornerRadius;
     rectangleView.alpha = rectangleViewAlpha;

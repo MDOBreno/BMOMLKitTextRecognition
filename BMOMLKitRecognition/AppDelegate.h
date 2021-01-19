@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  BMOMLKitTextRecognition
+//  BMOMLKitRecognition
 //
-//  Created by Breno Medeiros on 05/01/21.
+//  Created by Breno Medeiros on 18/01/21.
 //
 
 #import <UIKit/UIKit.h>
